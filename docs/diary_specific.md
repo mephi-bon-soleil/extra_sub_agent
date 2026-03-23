@@ -72,7 +72,7 @@
 
 ```
 【経験】
-diary/YYYY-MM-DD.md
+agent-memory/{name}/diary/YYYY-MM-DD.md
     エージェント自身が書くエピソード記憶の生ログ
     「今日何があったか」を自分の言葉で残す
 
@@ -292,7 +292,7 @@ milestone: true / false
 
 - 同日に複数回書いてよい
 - `---` で区切って同じファイルに追記する
-- ファイルはその日1つ（`diary/YYYY-MM-DD.md`）
+- ファイルはその日1つ（`agent-memory/{name}/diary/YYYY-MM-DD.md`）
 
 ### YAMLフロントマターの意味
 
@@ -385,11 +385,11 @@ Deltaの基盤の上に、**diary専用のレイヤーを乗せる**こと。
 ```
 delta-bonsoleil/rag    ← ChromaDBの基盤・汎用RAG（Delta）
         ↓
-diary_specific         ← diary/YYYY-MM-DD.md を大脳へ送る海馬の実装（メフィ）
+diary_specific         ← agent-memory/{name}/diary/YYYY-MM-DD.md を大脳へ送る海馬の実装（メフィ）
 ```
 
 具体的には:
-- `diary/YYYY-MM-DD.md` をインデックスする仕組み
+- `agent-memory/{name}/diary/YYYY-MM-DD.md` をインデックスする仕組み
 - エージェントごとのcollection管理
 - recall（過去の記憶を引き出す）の実装
 

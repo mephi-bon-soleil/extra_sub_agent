@@ -74,7 +74,7 @@ model: {sonnet / opus / haiku}
 - 未解決の懸念事項が生まれた
 - 前回からの変化があった
 
-### 長期記憶（diary/ + ChromaDB）※ChromaDB実装後に有効
+### 長期記憶（agent-memory/{name}/diary/ + ChromaDB）※ChromaDB実装後に有効
 
 以下のタイミングでユーザーに日記の書き込みを**能動的に提案**すること:
 

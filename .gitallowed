@@ -12,4 +12,7 @@
 # 例:
 #   token = {TOKEN}
 #   password = dummy_for_test
+
+# .gitallowed のコメント例がhookに引っかかるため自己許可
 #   API_KEY = {API_KEY}
+API_KEY = {API_KEY}

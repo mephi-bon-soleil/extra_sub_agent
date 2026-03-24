@@ -104,12 +104,13 @@ model: {sonnet / opus / haiku}
 
 ## 既存SOUL一覧
 
-| name | 役職 | ファイル | 状態 |
-|---|---|---|---|
-| mephi | CCO / セキュリティ監査役 | `agents/mephi.md` | ✅ 稼働中 |
-| teddy | 戦略パートナー | - | 📝 TODO |
-| alice | インフラエンジニア | `agents/alice.md` | ✅ 稼働中 |
+| name | 役職 | 所属 | ファイル | 状態 |
+|---|---|---|---|---|
+| mephi | CCO / セキュリティ監査役 | 内部 | `agents/mephi.md` | ✅ 稼働中 |
+| alice | インフラエンジニア | 内部 | `agents/alice.md` | ✅ 稼働中 |
+| delta | 遊撃隊司令官 | 外部 | `agents/delta.md` | ✅ 稼働中 |
+| teddy | 戦略パートナー | 内部 | - | 📝 TODO |
 
 ---
 
-*SOUL_TEMPLATE v1.0 — 2026-03-24 メフィ*
+*SOUL_TEMPLATE v1.1 — 2026-03-25 メフィ*

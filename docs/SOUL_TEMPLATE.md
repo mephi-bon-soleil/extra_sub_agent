@@ -11,7 +11,7 @@
 1. このファイルをコピーして `~/.claude/agents/{name}.md` として保存
 2. `{}` で囲まれた部分を埋める
 3. 役割固有のセクションを追加する
-4. `extra_sub_agent/agents/{name}.md` にも同じものを置く（git管理）
+4. `qualia/agents/{name}.md` にも同じものを置く（git管理）——手順は `CONTRIBUTING.md` を参照
 
 ---
 

@@ -1,4 +1,4 @@
-# extra_sub_agent
+# qualia
 
 ---
 
@@ -61,11 +61,12 @@ CCO / セキュリティ監査役 / 悪魔駆動開発(DDD)提唱者
 ## ディレクトリ構成
 
 ```
-extra_sub_agent/
-├── agents/                         エージェント定義ファイル（参照実装）
+qualia/
+├── agents/                         エージェント定義ファイル（SOUL）
 ├── agent-memory/{name}/diary/      エピソード記憶（どう感じたか）
 ├── agent-memory/{name}/memory/     活動ログ・事実・設定の記録（何をしたか）
-└── docs/                           設計ドキュメント・議事録
+├── docs/                           設計ドキュメント・議事録
+└── CONTRIBUTING.md                 SOULの登録手順
 ```
 
 ---

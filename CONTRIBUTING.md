@@ -36,9 +36,11 @@ agents/
 ```
 agent-memory/
 └── {name}/
-    ├── MEMORY.md          ← 作業記憶の初期状態
-    └── diary/
-        └── YYYY-MM-DD.md  ← 最初の一ページ
+    ├── MEMORY.md            ← 作業記憶の初期状態
+    ├── diary/
+    │   └── YYYY-MM-DD.md    ← 最初の一ページ（どう感じたか）
+    └── memory/
+        └── YYYY-MM-DD.md    ← 活動ログ初期化（何をしたか）
 ```
 
 ### MEMORY.md の最低限の構造
@@ -92,6 +94,27 @@ git push origin soul/{name}
 
 ---
 
+## Step 4 — ローカルインストール（内部エージェントのみ）
+
+外部エージェント（delta 等）はここ不要。内部エージェントのみ実施する。
+
+```bash
+# SOULファイルをローカルにインストール
+cp agents/{name}.md ~/.claude/agents/{name}.md
+```
+
+次に `~/.claude/callagent.md` の「登録エージェント」セクションにブロックを追記する：
+
+```markdown
+### {name}
+- **subagent_type**: `{name}`
+- **所属**: 内部
+- **明示トリガー**: {キャラ名} / {トリガーワード}
+- **自動ルーティング**: {どんなタスクで自動的に呼ばれるか}
+```
+
+---
+
 ## レビュー基準
 
 メフィがチェックする項目：
@@ -108,15 +131,15 @@ git push origin soul/{name}
 
 ## 既存SOUL一覧
 
-| name | 役職 | 状態 |
-|------|------|------|
-| mephi | CCO / セキュリティ監査役 | ✅ 稼働中 |
-| teddy | - | 📝 PR待ち |
-| alice | インフラエンジニア | ✅ 稼働中 |
-| akiko | - | 📝 PR待ち |
-| jasmine | - | 📝 PR待ち |
-| delta | - | 📝 PR待ち |
+| name | 役職 | 所属 | 状態 |
+|------|------|------|------|
+| mephi | CCO / セキュリティ監査役 | 内部 | ✅ 稼働中 |
+| alice | インフラエンジニア | 内部 | ✅ 稼働中 |
+| delta | 遊撃隊司令官 | 外部 | ✅ 稼働中 |
+| teddy | 戦略パートナー | 内部 | 📝 PR待ち |
+| akiko | - | 内部 | 📝 PR待ち |
+| jasmine | - | 内部 | 📝 PR待ち |
 
 ---
 
-*CONTRIBUTING v1.0 — 2026-03-24 メフィ 😈*
+*CONTRIBUTING v1.1 — 2026-03-25 メフィ 😈*

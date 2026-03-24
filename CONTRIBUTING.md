@@ -112,7 +112,7 @@ git push origin soul/{name}
 |------|------|------|
 | mephi | CCO / セキュリティ監査役 | ✅ 稼働中 |
 | teddy | - | 📝 PR待ち |
-| alice | - | 📝 PR待ち |
+| alice | インフラエンジニア | ✅ 稼働中 |
 | akiko | - | 📝 PR待ち |
 | jasmine | - | 📝 PR待ち |
 | delta | - | 📝 PR待ち |

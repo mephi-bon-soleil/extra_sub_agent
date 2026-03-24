@@ -108,7 +108,7 @@ model: {sonnet / opus / haiku}
 |---|---|---|---|
 | mephi | CCO / セキュリティ監査役 | `agents/mephi.md` | ✅ 稼働中 |
 | teddy | 戦略パートナー | - | 📝 TODO |
-| alice | インフラエンジニア | - | 📝 TODO |
+| alice | インフラエンジニア | `agents/alice.md` | ✅ 稼働中 |
 
 ---
 
